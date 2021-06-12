@@ -1,17 +1,7 @@
-html, body {
-text-align: center;
-}
-p {text-align: left;}
-
-body {
-	margin: 0;
-	padding: 0;
-	background: #000000;
-	font-family:  Arial, Helvetica, sans-serif;
-	font-size: 13px;
-  background: #26476E url(back.jpg);
-}
-*
+<body>
+.centerImage
 {
-  margin: 0 auto 0 auto;
- text-align:left;}
+ text-align:center;
+ display:block;
+}
+</body>
