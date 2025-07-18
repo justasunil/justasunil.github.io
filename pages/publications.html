@@ -49,7 +49,22 @@ function toggle(id) {
 		<br>
 		<h1 class="heading">Publications</h1>
 
-<p><b>Sunil Kumar</b>, and Vivek Kumar, "<b>KarmaPM: Reward-Driven Power Manager</b>", in Proceedings of the European Conference on Parallel Processing (EuroPAR'25), Dresden, Germany, August 2025.
+<p><b>Sunil Kumar</b>, "<b>Power Scheduling on Multicore Multiprocessor Systems for Maximizing Throughput and Fairness</b>", in PhD Symposium, Euro-Par'25, Dresden, Germany, August 2025.
+  [<a href="javascript:void(0);" onclick="toggle('abstract-symposium')">abstract</a>]
+</p>
+<div id="abstract-symposium" style="display:none;">
+  <i>
+    <p>
+    Hardware overprovisioning is a widely used technique to improve the average power utilization of computing systems by capping the processor’s power consumption. However, applying uniform power caps across sockets in multiprocessor systems can degrade the performance of co-running applications due to workload variation. Existing solutions primarily aim to enhance power utilization and system throughput but ignore fairness in sharing surplus power between applications and rely on processor-selected frequency settings under a power cap, which may be suboptimal. This thesis addresses these limitations through a two-stage power management approach. 
+    </p>
+    <p>
+      First, it proposes a system that dynamically and bidirectionally redistributes surplus power among applications to improve overall system throughput while ensuring fairness. When it identifies an application with surplus power, it donates power to other applications exhibiting high CPU utilization. When donor applications transition to the high CPU utilization phase, they are rewarded by having a portion of the transferred power returned to them. Second, it improves performance by configuring optimal frequency settings for each application under a power cap rather than relying on default processor settings. Once the performance is optimized, the system further reallocates power to balance performance gains across applications to improve the fairness between applications. The proposed system is evaluated on a quad-socket, 72-core Intel Xeon server using diverse HPC application mixes and power cap settings. The results demonstrate significant improvements in both system throughput and application-level fairness.
+    </p>
+  </i>
+</div>
+
+
+<p><b>Sunil Kumar</b>, and Vivek Kumar, "<b>KarmaPM: Reward-Driven Power Manager</b>", in Proceedings of the European Conference on Parallel Processing (Euro-Par'25), Dresden, Germany, August 2025.
   [<a href="javascript:void(0);" onclick="toggle('abstract-karma')">abstract</a>]
 </p>
 <div id="abstract-karma" style="display:none;">
