@@ -48,6 +48,21 @@ function toggle(id) {
 		<br>
 		<br>
 		<h1 class="heading">Publications</h1>
+<p><b>Sunil Kumar</b>, Vivek Kumar, and Sridutt Bhalachandra, "<b>Power Scheduling for Maximizing Throughput and Fairness in Co-running Applications</b>", in Proceedings of the ACM Transactions on Architecture and Code Optimization (TACO'26), May 2026.
+  [<a href="javascript:void(0);" onclick="toggle('abstract-fulcrum')">abstract</a>],
+  [<a href="https://doi.org/10.1145/3818685" target="_blank">paper</a>]
+</p>
+<div id="abstract-fulcrum" style="display:none;">
+  <i>
+    <p>
+      Due to the signiicant cost associated with power consumption, hardware overprovisioning is widely used to cap processor power consumption and improve the average power utilization of servers in data centers and nodes in HPC clusters. However, uniformly capping power across sockets in multiprocessor servers can lead to performance degradation for co-running applications due to workload variability. Existing solutions primarily focus on cluster-level power management, making limited use of power scheduling within multi-socket servers or processor frequency scaling to regulate power consumption under power constraints.
+    </p>
+    <p>
+    This paper introduces Fulcrum, a novel power management library for co-running parallel applications on multi-socket, multi-core servers, independent of the underlying parallel programming model. Fulcrum dynamically redistributes power on a power-constrained multi-socket server to maximize throughput and fairness for co-running applications without requiring prior knowledge of application characteristics. Fulcrum periodically proiles hardware performance monitoring counters and independently adjusts core and uncore frequencies for each application based on its power sensitivity and degree of parallelism, thereby maximizing overall system throughput. After optimizing application-level power usage, Fulcrum enhances application-level fairness by dynamically redistributing power among applications, thereby maximizing aggregate throughput while adhering to the server’s global power budget. We evaluated Fulcrum across various exascale proxy application mixes and power caps on a four-socket, 72-core Intel Cooper Lake processor. Our results show that Fulcrum improves system throughput (geometric mean) by 26.3% under low power caps and by up to 5.3% under higher power caps, while delivering power eiciency improvements of 27.7-8.4% at the respective power caps. Moreover, Fulcrum outperforms the two state-of-the-art approaches at both power caps, achieving geometric mean throughput improvements of 3.9-16.4% and power eiciency gains of 10.3-18.6%, while maintaining comparable fairness.
+    </p>
+  </i>
+</div>
+
 
 <p><b>Sunil Kumar</b>, "<b>Power Scheduling on Multicore Multiprocessor Systems for Maximizing Throughput and Fairness</b>", in PhD Symposium, Euro-Par'25, Dresden, Germany, August 2025.
   [<a href="javascript:void(0);" onclick="toggle('abstract-symposium')">abstract</a>]
