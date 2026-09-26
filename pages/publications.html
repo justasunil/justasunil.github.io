@@ -47,7 +47,7 @@ function toggle(id) {
 		<br>
 		<br>
 		<br>
-		<h1 class="heading">Publications</h1>
+		<h1 class="heading">Peer Reviewed Publications</h1>
 
 <p>[Full Paper]: <b>Sunil Kumar</b>, and Vivek Kumar, "<b>Reward-Driven Power Scheduling under Power Capping with DVFS-UFS Co-Optimization</b>", in Proceedings of the IEEE International Conference on High Performance Computing (HiPC'26), Bangalore, India, December 2026.
   [<a href="javascript:void(0);" onclick="toggle('abstract-themis')">abstract</a>],
@@ -82,21 +82,6 @@ function toggle(id) {
 </div>
 
 
-<p>[Short Paper]: <b>Sunil Kumar</b>, "<b>Power Scheduling on Multicore Multiprocessor Systems for Maximizing Throughput and Fairness</b>", in PhD Symposium, Euro-Par'25, Dresden, Germany, August 2025.
-  [<a href="javascript:void(0);" onclick="toggle('abstract-symposium')">abstract</a>]
-</p>
-<div id="abstract-symposium" style="display:none;">
-  <i>
-    <p>
-    Hardware overprovisioning is a widely used technique to improve the average power utilization of computing systems by capping the processor’s power consumption. However, applying uniform power caps across sockets in multiprocessor systems can degrade the performance of co-running applications due to workload variation. Existing solutions primarily aim to enhance power utilization and system throughput but ignore fairness in sharing surplus power between applications and rely on processor-selected frequency settings under a power cap, which may be suboptimal. This thesis addresses these limitations through a two-stage power management approach. 
-    </p>
-    <p>
-      First, it proposes a system that dynamically and bidirectionally redistributes surplus power among applications to improve overall system throughput while ensuring fairness. When it identifies an application with surplus power, it donates power to other applications exhibiting high CPU utilization. When donor applications transition to the high CPU utilization phase, they are rewarded by having a portion of the transferred power returned to them. Second, it improves performance by configuring optimal frequency settings for each application under a power cap rather than relying on default processor settings. Once the performance is optimized, the system further reallocates power to balance performance gains across applications to improve the fairness between applications. The proposed system is evaluated on a quad-socket, 72-core Intel Xeon server using diverse HPC application mixes and power cap settings. The results demonstrate significant improvements in both system throughput and application-level fairness.
-    </p>
-  </i>
-</div>
-
-
 <p>[Full Paper]: <b>Sunil Kumar</b>, and Vivek Kumar, "<b>KarmaPM: Reward-Driven Power Manager</b>", in Proceedings of the European Conference on Parallel Processing (Euro-Par'25), Dresden, Germany, August 2025.
   [<a href="javascript:void(0);" onclick="toggle('abstract-karma')">abstract</a>],
   [<a href="https://doi.org/10.1007/978-3-031-99854-6_24" target="_blank">paper</a>]
@@ -112,14 +97,6 @@ function toggle(id) {
   </i>
 </div>
 
-<p>[Poster]: <b>Sunil Kumar</b>, Vivek Kumar, and Sridutt Bhalachandra, "<b>RPM: Reward Power Manager for Power Distribution over a Cluster</b>", in Student Research Symposium, HiPC'24.
-  [<a href="https://doi.org/10.1109/HiPCW63042.2024.00034" target="_blank">paper</a>]
-</p>
-
-<p>[Poster]: <b>Sunil Kumar</b>, Vivek Kumar, and Sridutt Bhalachandra, "<b>Energy Efficiency under Limited Power Budget</b>", in Student Research Symposium, HiPC'22.
-  [<a href="https://doi.org/10.1109/HiPCW57629.2022.00015" target="_blank">paper</a>]
-</p>
-
 <p>[Full Paper]: <b>Sunil Kumar</b>, Akshat Gupta, Vivek Kumar, and Sridutt Bhalachandra, "<b>Cuttlefish: Library for Achieving Energy Efficiency in Multicore Parallel Programs</b>", in Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC'21), St. Louis, MO, USA, November 2021.
   [<a href="javascript:void(0);" onclick="toggle('abstract-cuttlefish')">abstract</a>], 
   [<a href="https://dl.acm.org/doi/10.1145/3458817.3476163" target="_blank">paper</a>]
@@ -134,6 +111,35 @@ function toggle(id) {
     </p>
   </i>
 </div>
+<br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+<h1 class="heading">Doctorol Symposium and Poster Publications</h1>
+<p>[Short Paper]: <b>Sunil Kumar</b>, "<b>Power Scheduling on Multicore Multiprocessor Systems for Maximizing Throughput and Fairness</b>", in PhD Symposium, Euro-Par'25, Dresden, Germany, August 2025.
+  [<a href="javascript:void(0);" onclick="toggle('abstract-symposium')">abstract</a>]
+</p>
+<div id="abstract-symposium" style="display:none;">
+  <i>
+    <p>
+    Hardware overprovisioning is a widely used technique to improve the average power utilization of computing systems by capping the processor’s power consumption. However, applying uniform power caps across sockets in multiprocessor systems can degrade the performance of co-running applications due to workload variation. Existing solutions primarily aim to enhance power utilization and system throughput but ignore fairness in sharing surplus power between applications and rely on processor-selected frequency settings under a power cap, which may be suboptimal. This thesis addresses these limitations through a two-stage power management approach.
+    </p>
+    <p>
+      First, it proposes a system that dynamically and bidirectionally redistributes surplus power among applications to improve overall system throughput while ensuring fairness. When it identifies an application with surplus power, it donates power to other applications exhibiting high CPU utilization. When donor applications transition to the high CPU utilization phase, they are rewarded by having a portion of the transferred power returned to them. Second, it improves performance by configuring optimal frequency settings for each application under a power cap rather than relying on default processor settings. Once the performance is optimized, the system further reallocates power to balance performance gains across applications to improve the fairness between applications. The proposed system is evaluated on a quad-socket, 72-core Intel Xeon server using diverse HPC application mixes and power cap settings. The results demonstrate significant improvements in both system throughput and application-level fairness.
+    </p>
+  </i>
+</div>
+<p>[Poster]: <b>Sunil Kumar</b>, Vivek Kumar, and Sridutt Bhalachandra, "<b>RPM: Reward Power Manager for Power Distribution over a Cluster</b>", in Student Research Symposium, HiPC'24.
+  [<a href="https://doi.org/10.1109/HiPCW63042.2024.00034" target="_blank">paper</a>]
+</p>
+
+<p>[Poster]: <b>Sunil Kumar</b>, Vivek Kumar, and Sridutt Bhalachandra, "<b>Energy Efficiency under Limited Power Budget</b>", in Student Research Symposium, HiPC'22.
+  [<a href="https://doi.org/10.1109/HiPCW57629.2022.00015" target="_blank">paper</a>]
+</p>
 
 
 	</body>
