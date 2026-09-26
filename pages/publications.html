@@ -48,6 +48,24 @@ function toggle(id) {
 		<br>
 		<br>
 		<h1 class="heading">Publications</h1>
+
+<p>[Full Paper]: <b>Sunil Kumar</b>, and Vivek Kumar, "<b>Reward-Driven Power Scheduling under Power Capping with DVFS-UFS Co-Optimization</b>", in Proceedings of the IEEE International Conference on High Performance Computing (HiPC'26), Bangalore, India, December 2026.
+  [<a href="javascript:void(0);" onclick="toggle('abstract-themis')">abstract</a>],
+  [<a href="www.com" target="_blank">To appear</a>]
+</p>
+<div id="abstract-themis" style="display:none;">
+  <i>
+    <p>
+    Hardware overprovisioning is a widely used technique to cap processor power consumption and improve average power utilization across data center servers and HPC nodes. However, applying a uniform power cap across multiprocessor sockets often leads to significant performance degradation for co-running applications due to inherent workload variations. Recent research proposed a bidirectional power management runtime for co-running applications that dynamically redistributed power across sockets in a power capped system. The runtime transferred surplus power from underutilizing co-runners to high-demand co-runners, and a reward mechanism restored half of the transferred power when demand resurged, ensuring balanced performance and fairness.
+    </p>
+    <p>
+    This paper introduces Themis, a novel power management library that improves upon the reward-driven approach by characterizing the power sensitivity of co-runners. Themis periodically profiles instructions per second (IPS) and CPU utilization for each co-runner and independently adjusts core and uncore frequencies for each application based on its frequency sensitivity, thereby maximizing overall system throughput. It dynamically determines and redistributes the share of surplus power and the amount of reward power based on co-runner’s power sensitivities. We evaluated Themis across various exascale proxy application mixes and power caps on a four-socket, 72-core Intel Cooper Lake processor. Our results show that Themis improved system throughput (geometric mean) by 24.4% at a lower power cap and 6.2% at a higher power cap. Moreover, Themis outperformed three state-of-the-art approaches at both power caps, achieving geometric mean throughput improvements of 13.8-4.2%.
+  </p>
+  </i>
+</div>
+
+
+
 <p>[Full Paper]: <b>Sunil Kumar</b>, Vivek Kumar, and Sridutt Bhalachandra, "<b>Power Scheduling for Maximizing Throughput and Fairness in Co-running Applications</b>", in Proceedings of the ACM Transactions on Architecture and Code Optimization (TACO'26), May 2026.
   [<a href="javascript:void(0);" onclick="toggle('abstract-fulcrum')">abstract</a>],
   [<a href="https://doi.org/10.1145/3818685" target="_blank">paper</a>]
