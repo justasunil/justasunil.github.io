@@ -1,55 +1,113 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Sunil Kumar</title>
-		<link rel="stylesheet" href="pages/styles.css">
-	</head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sunil Kumar — HPC and Systems Researcher">
+  <title>Sunil Kumar | HPC & Systems Researcher</title>
+  <link rel="stylesheet" href="pages/styles.css">
+</head>
+<body>
+  <main class="site">
+    <header class="site-header">
+      <a class="site-title" href="index.html">Sunil Kumar</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="pages/publications.html">Publications</a>
+        <a href="pages/about.html">Research</a>
+        <a href="pages/cv.html">CV</a>
+        <a href="pages/contact.html">Contact</a>
+      </nav>
+    </header>
 
-	<body>
+    <section class="intro">
+      <h1>Sunil Kumar</h1>
+      <p class="role">Ph.D. | HPC &amp; Systems Researcher</p>
+      <p class="affiliation">
+        Indraprastha Institute of Information Technology, Delhi
+        (<a href="https://iiitd.ac.in/" target="_blank" rel="noopener">IIIT-Delhi</a>)
+        &nbsp;·&nbsp; Google Ph.D. Fellow
+      </p>
 
+      <p>
+        I am a researcher working on computer systems, with a focus on
+        high-performance computing, power management, and performance
+        optimization of modern CPU/GPU systems.
+      </p>
 
-		<ul>
-			<li><a href="pages/contact.html">Contact</a></li>
-			<li><a href="pages/publications.html">Publications</a></li>
-			<li><a href="pages/about.html">About</a></li>
-			<li><a href="index.html">Home</a></li>
+      <p>
+        My research focuses on improving power efficiency (performance/watt)
+        by exploiting techniques such as dynamic voltage and frequency scaling
+        (DVFS), uncore frequency scaling, power capping, and runtime-level
+        power management. I characterize diverse workloads using hardware
+        performance counters and design adaptive runtime systems that respond
+        to application behavior.
+      </p>
 
-		</ul>
-			<img src="photos/bio.jpg" alt="profile photo">
-		
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-        <h1 class="heading" style="text-align: center;">Sunil Kumar</h1>
-        <h2 class="sub_text" style="text-align: center;">Ph.D. Scholar | Google Ph.D. Fellow</h2>
-        <h2 class="sub_text" style="text-align: center;">Indraprastha Institute of Information Technology, Delhi (<a href="https://iiitd.ac.in/" target="_blank">IIIT-Delhi</a>)</h2>
-        <br>
-        <h1> Research Updates </h1>
-        <div style="width:600px;height:150px;line-height:2.7em;overflow-y:scroll;padding:5px;border:10px double #FFFFFF;background: #333333;color: white">
-		<p> Full Paper accepted in HiPC'26</p>
-		<p> Submitted PhD thesis in July 2026</p>
-		<p> Full Paper accepted in TACO'26</p>
-		<p> Received student scholarship from Euro-Par'25 conference</p>
-		<p> Short Paper accepted in PhD Symposium track at Euro-Par'25</p>
-		<p> Artifact accepted in Euro-Par'25</p>
-		<p> Full Paper accepted in Euro-Par'25</p>
-		<p> Poster accepted in HiPC SRS 2024</p>
-		<p> Poster accepted in HiPC SRS 2022</p>
-		<p> Received prestigous Google PhD Fellowship 2022</p>
-		<p> Recieved Letter of Appreciation for B.Tech Project</p>
-		<p> Our SC '21 paper nominated under five Best Reproducibility Advancement Finalist papers</p>
-		<p> Recieved SIGHPC Travel grant for SC'21 conference</p>
-		<p> Student Volunteer application accepted in SC'21</p>
-        	<p> Joined PhD Program at IIIT-Delhi</p>
-		<p> Full Paper accepted in SC'21 conference</p>
-		</div>
-		
-		
-	</body>
+      <p>
+        My work spans co-running HPC workloads, multicore and multiprocessor
+        systems, CPU/GPU performance analysis, and resource management under
+        power constraints. I am particularly interested in the interaction
+        between workload characteristics, processor frequency settings,
+        power budgets, throughput, and fairness.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Research interests</h2>
+      <p>
+        High-Performance Computing · CPU/GPU Performance Optimization ·
+        Power Management · DVFS · Uncore Frequency Scaling · Power Capping ·
+        Runtime Systems · PMU/PMC Profiling · Performance/Watt
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>News</h2>
+      <div class="news">
+        <p><span>2026</span> Full paper accepted at HiPC'26.</p>
+        <p><span>2026</span> Submitted Ph.D. thesis in July 2026.</p>
+        <p><span>2026</span> Full paper published in ACM TACO.</p>
+        <p><span>2025</span> Full paper accepted at Euro-Par'25.</p>
+        <p><span>2025</span> Short paper accepted in the Euro-Par'25 PhD Symposium.</p>
+        <p><span>2025</span> Artifact accepted at Euro-Par'25.</p>
+        <p><span>2025</span> Received student scholarship for Euro-Par'25.</p>
+        <p><span>2024</span> Poster accepted at HiPC SRS'24.</p>
+        <p><span>2022</span> Received the Google Ph.D. Fellowship.</p>
+        <p><span>2021</span> Cuttlefish accepted at SC'21.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Selected publications</h2>
+
+      <article class="publication">
+        <p class="pub-title">Reward-Driven Power Scheduling under Power Capping with DVFS-UFS Co-Optimization</p>
+        <p>Sunil Kumar and Vivek Kumar · HiPC'26 · 2026</p>
+        <a href="pages/publications.html">Details &amp; publications →</a>
+      </article>
+
+      <article class="publication">
+        <p class="pub-title">Power Scheduling for Maximizing Throughput and Fairness in Co-running Applications</p>
+        <p>Sunil Kumar, Vivek Kumar, and Sridutt Bhalachandra · ACM TACO · 2026</p>
+        <a href="https://doi.org/10.1145/3818685" target="_blank" rel="noopener">Paper →</a>
+      </article>
+
+      <article class="publication">
+        <p class="pub-title">KarmaPM: Reward-Driven Power Manager</p>
+        <p>Sunil Kumar and Vivek Kumar · Euro-Par'25 · 2025</p>
+        <a href="https://doi.org/10.1007/978-3-031-99854-6_24" target="_blank" rel="noopener">Paper →</a>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/justasunil" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/justasunil" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="mailto:sunilk@iiitd.ac.in">Email</a>
+      </div>
+      <p>© Sunil Kumar</p>
+    </footer>
+  </main>
+</body>
 </html>

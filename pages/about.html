@@ -1,38 +1,82 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>About me</title>
-		<link rel="stylesheet" href="styles.css">
-	</head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research | Sunil Kumar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="site">
+    <header class="site-header">
+      <a class="site-title" href="../index.html">Sunil Kumar</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="publications.html">Publications</a>
+        <a href="about.html">Research</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-	<body>
-		<ul>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="publications.html">Publications</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="../index.html">Home</a></li>
+    <section class="page">
+      <img class="profile-photo" src="../photos/bio.jpg" alt="Sunil Kumar">
 
-		</ul>
-		<img src="../photos/bio.jpg" alt="profile photo">
-		
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<h1 class="heading">About me</h1>
-		<p class="sub_text" style="text-align: justify; white-space: normal;">
+      <h1>Research</h1>
 
-		I am a Ph.D. scholar at <a href="https://hipec.github.io/" target="_blank">HiPeC Lab</a>, Indraprastha Institute of Information Technology Delhi (<a href="https://iiitd.ac.in/" target="_blank">IIIT Delhi</a>), under the guidance of <a href="https://vivkumar.github.io/" target="_blank">Dr. Vivek Kumar</a>. Prior to this, I worked at the HiPeC Lab as a Research Assistant, where I focused on designing and implementing energy-efficient runtimes for distributed systems using hybrid programming models.
-		</p>
-		<p class="sub_text" style="text-align: justify; white-space: normal;">
-		Before starting my Ph.D., I completed my B.Tech in Computer Science and Engineering at IIIT Delhi. As an undergraduate researcher at the HiPeC Lab, I worked on a project aimed at designing an energy-efficient runtime library for parallel programs running on multi-core processors.
-		</p>
-                <p class="sub_text" style="text-align: justify; white-space: normal;">
-		My research interests lie in High Performance Computing (HPC), with a focus on building runtime software for HPC systems composed of multicore processors. Specifically, I am interested in developing adaptive runtime systems that can dynamically adjust to power-efficient environments on HPC systems without compromising performance.
-		</p>
-	</body>
+      <p>
+        My research is centered on power and performance optimization of modern
+        computing systems. I investigate how processor resources can be managed
+        dynamically to improve performance per watt while respecting system-level
+        power constraints.
+      </p>
+
+      <p>
+        During my Ph.D. at IIIT-Delhi, I worked on runtime-level power management
+        for multicore and multiprocessor systems running co-scheduled workloads.
+        My work combines hardware performance monitoring, workload
+        characterization, processor frequency control, and power capping.
+      </p>
+
+      <h2>Research interests</h2>
+      <p>
+        High-Performance Computing (HPC), CPU/GPU performance optimization,
+        power management, DVFS, uncore frequency scaling, power capping,
+        runtime systems, PMU/PMC profiling, workload characterization,
+        performance/watt, and resource management.
+      </p>
+
+      <h2>Research focus</h2>
+      <p>
+        I study workloads with different compute, memory, and I/O characteristics
+        and analyze how core frequency, uncore frequency, power budgets, and
+        application parallelism affect performance and energy efficiency.
+      </p>
+
+      <p>
+        My recent work explores dynamic power redistribution among co-running
+        applications, frequency sensitivity, throughput optimization, and
+        fairness under a global power budget. The resulting systems include
+        Cuttlefish, KarmaPM, and Fulcrum.
+      </p>
+
+      <h2>Education</h2>
+      <p>
+        <strong>Ph.D., Computer Science and Engineering</strong><br>
+        Indraprastha Institute of Information Technology, Delhi
+      </p>
+      <p>
+        <strong>B.Tech., Computer Science and Engineering</strong><br>
+        Indraprastha Institute of Information Technology, Delhi
+      </p>
+    </section>
+
+    <footer class="site-footer">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/justasunil" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/justasunil" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:sunilk@iiitd.ac.in">Email</a>
+      </div>
+    </footer>
+  </main>
+</body>
 </html>

@@ -1,146 +1,179 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications | Sunil Kumar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="site">
+    <header class="site-header">
+      <a class="site-title" href="../index.html">Sunil Kumar</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="publications.html">Publications</a>
+        <a href="about.html">Research</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
+    <section class="page">
+      <h1>Publications</h1>
 
-<script>
-function toggle(id) {
-    var el = document.getElementById(id);
-    if (el.style.display === "none") {
-        el.style.display = "block";
-    } else {
-        el.style.display = "none";
+      <h2>Peer-reviewed publications</h2>
+
+      <article class="paper">
+        <p class="paper-title">
+          Sunil Kumar and Vivek Kumar, “Reward-Driven Power Scheduling under Power Capping with DVFS-UFS Co-Optimization,”
+          IEEE International Conference on High Performance Computing (HiPC'26), Bangalore, India, December 2026.
+        </p>
+        <p class="paper-meta">
+          [Full Paper] ·
+          <button class="toggle" onclick="toggleAbstract('abstract-themis')">abstract</button>
+          · To appear
+        </p>
+        <div id="abstract-themis" class="abstract">
+          <p>
+            Hardware overprovisioning is widely used to cap processor power consumption
+            and improve average power utilization across data-center servers and HPC nodes.
+            This work introduces Themis, a power management library that characterizes the
+            power sensitivity of co-running applications and independently adjusts core and
+            uncore frequencies to maximize system throughput under power constraints.
+          </p>
+          <p>
+            Themis dynamically determines and redistributes surplus power and reward power
+            based on application power sensitivities. Evaluation across exascale proxy
+            application mixes and power caps demonstrates improved system throughput over
+            existing approaches.
+          </p>
+        </div>
+      </article>
+
+      <article class="paper">
+        <p class="paper-title">
+          Sunil Kumar, Vivek Kumar, and Sridutt Bhalachandra, “Power Scheduling for Maximizing Throughput and Fairness in Co-running Applications,”
+          ACM Transactions on Architecture and Code Optimization (TACO), 2026.
+        </p>
+        <p class="paper-meta">
+          [Full Paper] ·
+          <button class="toggle" onclick="toggleAbstract('abstract-fulcrum')">abstract</button>
+          · <a href="https://doi.org/10.1145/3818685" target="_blank" rel="noopener">paper</a>
+        </p>
+        <div id="abstract-fulcrum" class="abstract">
+          <p>
+            This paper introduces Fulcrum, a power management library for co-running
+            parallel applications on multi-socket, multi-core servers. Fulcrum dynamically
+            redistributes power under a global power constraint and independently adjusts
+            core and uncore frequencies according to application power sensitivity and
+            degree of parallelism.
+          </p>
+          <p>
+            After optimizing application-level power usage, Fulcrum further reallocates
+            power to balance performance gains across applications and improve fairness.
+          </p>
+        </div>
+      </article>
+
+      <article class="paper">
+        <p class="paper-title">
+          Sunil Kumar and Vivek Kumar, “KarmaPM: Reward-Driven Power Manager,”
+          European Conference on Parallel Processing (Euro-Par'25), Dresden, Germany, August 2025.
+        </p>
+        <p class="paper-meta">
+          [Full Paper] ·
+          <button class="toggle" onclick="toggleAbstract('abstract-karma')">abstract</button>
+          · <a href="https://doi.org/10.1007/978-3-031-99854-6_24" target="_blank" rel="noopener">paper</a>
+        </p>
+        <div id="abstract-karma" class="abstract">
+          <p>
+            KarmaPM is a power management library for co-running applications on
+            multiprocessor systems. It dynamically redistributes power bidirectionally
+            across sockets while maintaining fairness between applications.
+          </p>
+          <p>
+            KarmaPM profiles CPU utilization, identifies underutilizing donor sockets,
+            transfers surplus power to high-demand receivers, and uses a reward-power
+            scheme when donor applications return to high-utilization phases.
+          </p>
+        </div>
+      </article>
+
+      <article class="paper">
+        <p class="paper-title">
+          Sunil Kumar, Akshat Gupta, Vivek Kumar, and Sridutt Bhalachandra,
+          “Cuttlefish: Library for Achieving Energy Efficiency in Multicore Parallel Programs,”
+          International Conference for High Performance Computing, Networking, Storage and Analysis (SC'21),
+          St. Louis, MO, USA, November 2021.
+        </p>
+        <p class="paper-meta">
+          [Full Paper] ·
+          <button class="toggle" onclick="toggleAbstract('abstract-cuttlefish')">abstract</button>
+          · <a href="https://dl.acm.org/doi/10.1145/3458817.3476163" target="_blank" rel="noopener">paper</a>
+        </p>
+        <div id="abstract-cuttlefish" class="abstract">
+          <p>
+            Cuttlefish is a programming-model-oblivious C/C++ library for achieving
+            energy efficiency in multicore parallel programs running on Intel processors.
+            An online profiler discovers application memory access patterns and combines
+            DVFS and uncore frequency scaling to dynamically adapt processor frequencies.
+          </p>
+        </div>
+      </article>
+
+      <h2>Doctoral symposium and poster publications</h2>
+
+      <article class="paper">
+        <p class="paper-title">
+          Sunil Kumar, “Power Scheduling on Multicore Multiprocessor Systems for Maximizing Throughput and Fairness,”
+          PhD Symposium, Euro-Par'25, Dresden, Germany, August 2025.
+        </p>
+        <p class="paper-meta">[Short Paper] · <button class="toggle" onclick="toggleAbstract('abstract-symposium')">abstract</button></p>
+        <div id="abstract-symposium" class="abstract">
+          <p>
+            This thesis work addresses power management for co-running applications through
+            dynamic redistribution of surplus power and application-aware frequency selection.
+            The proposed two-stage approach first improves throughput through bidirectional
+            power redistribution and then balances performance gains to improve fairness.
+          </p>
+        </div>
+      </article>
+
+      <article class="paper">
+        <p class="paper-title">
+          Sunil Kumar, Vivek Kumar, and Sridutt Bhalachandra, “RPM: Reward Power Manager for Power Distribution over a Cluster,”
+          Student Research Symposium, HiPC'24.
+        </p>
+        <p class="paper-meta">
+          [Poster] · <a href="https://doi.org/10.1109/HiPCW63042.2024.00034" target="_blank" rel="noopener">paper</a>
+        </p>
+      </article>
+
+      <article class="paper">
+        <p class="paper-title">
+          Sunil Kumar, Vivek Kumar, and Sridutt Bhalachandra, “Energy Efficiency under Limited Power Budget,”
+          Student Research Symposium, HiPC'22.
+        </p>
+        <p class="paper-meta">
+          [Poster] · <a href="https://doi.org/10.1109/HiPCW57629.2022.00015" target="_blank" rel="noopener">paper</a>
+        </p>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/justasunil" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/justasunil" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:sunilk@iiitd.ac.in">Email</a>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    function toggleAbstract(id) {
+      const element = document.getElementById(id);
+      element.style.display = element.style.display === "block" ? "none" : "block";
     }
-}
-</script>
-
-<html>
-	<head>
-		<title>Publications</title>
-		<link rel="stylesheet" href="styles.css">
-	</head>
-
-	<body>
-		<script type="text/javascript">
-			function toggle(obj) {
-				var obj=document.getElementById(obj);
-				if (obj.style.display == "block") {
-					obj.style.display = "none";
-				}
-				else {
-					obj.style.display = "block";
-				}
-			}
-		</script>
-		<ul>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="publications.html">Publications</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="../index.html">Home</a></li>
-
-		</ul>
-		<img src="../photos/bio.jpg" alt="profile photo">
-		
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<h1 class="heading">Peer Reviewed Publications</h1>
-
-<p>[Full Paper]: <b>Sunil Kumar</b>, and Vivek Kumar, "<b>Reward-Driven Power Scheduling under Power Capping with DVFS-UFS Co-Optimization</b>", in Proceedings of the IEEE International Conference on High Performance Computing (HiPC'26), Bangalore, India, December 2026.
-  [<a href="javascript:void(0);" onclick="toggle('abstract-themis')">abstract</a>],
-  [<a href="www.com" target="_blank">To appear</a>]
-</p>
-<div id="abstract-themis" style="display:none;">
-  <i>
-    <p>
-    Hardware overprovisioning is a widely used technique to cap processor power consumption and improve average power utilization across data center servers and HPC nodes. However, applying a uniform power cap across multiprocessor sockets often leads to significant performance degradation for co-running applications due to inherent workload variations. Recent research proposed a bidirectional power management runtime for co-running applications that dynamically redistributed power across sockets in a power capped system. The runtime transferred surplus power from underutilizing co-runners to high-demand co-runners, and a reward mechanism restored half of the transferred power when demand resurged, ensuring balanced performance and fairness.
-    </p>
-    <p>
-    This paper introduces Themis, a novel power management library that improves upon the reward-driven approach by characterizing the power sensitivity of co-runners. Themis periodically profiles instructions per second (IPS) and CPU utilization for each co-runner and independently adjusts core and uncore frequencies for each application based on its frequency sensitivity, thereby maximizing overall system throughput. It dynamically determines and redistributes the share of surplus power and the amount of reward power based on co-runner’s power sensitivities. We evaluated Themis across various exascale proxy application mixes and power caps on a four-socket, 72-core Intel Cooper Lake processor. Our results show that Themis improved system throughput (geometric mean) by 24.4% at a lower power cap and 6.2% at a higher power cap. Moreover, Themis outperformed three state-of-the-art approaches at both power caps, achieving geometric mean throughput improvements of 13.8-4.2%.
-  </p>
-  </i>
-</div>
-
-
-
-<p>[Full Paper]: <b>Sunil Kumar</b>, Vivek Kumar, and Sridutt Bhalachandra, "<b>Power Scheduling for Maximizing Throughput and Fairness in Co-running Applications</b>", in Proceedings of the ACM Transactions on Architecture and Code Optimization (TACO'26), May 2026.
-  [<a href="javascript:void(0);" onclick="toggle('abstract-fulcrum')">abstract</a>],
-  [<a href="https://doi.org/10.1145/3818685" target="_blank">paper</a>]
-</p>
-<div id="abstract-fulcrum" style="display:none;">
-  <i>
-    <p>
-      Due to the signiicant cost associated with power consumption, hardware overprovisioning is widely used to cap processor power consumption and improve the average power utilization of servers in data centers and nodes in HPC clusters. However, uniformly capping power across sockets in multiprocessor servers can lead to performance degradation for co-running applications due to workload variability. Existing solutions primarily focus on cluster-level power management, making limited use of power scheduling within multi-socket servers or processor frequency scaling to regulate power consumption under power constraints.
-    </p>
-    <p>
-    This paper introduces Fulcrum, a novel power management library for co-running parallel applications on multi-socket, multi-core servers, independent of the underlying parallel programming model. Fulcrum dynamically redistributes power on a power-constrained multi-socket server to maximize throughput and fairness for co-running applications without requiring prior knowledge of application characteristics. Fulcrum periodically proiles hardware performance monitoring counters and independently adjusts core and uncore frequencies for each application based on its power sensitivity and degree of parallelism, thereby maximizing overall system throughput. After optimizing application-level power usage, Fulcrum enhances application-level fairness by dynamically redistributing power among applications, thereby maximizing aggregate throughput while adhering to the server’s global power budget. We evaluated Fulcrum across various exascale proxy application mixes and power caps on a four-socket, 72-core Intel Cooper Lake processor. Our results show that Fulcrum improves system throughput (geometric mean) by 26.3% under low power caps and by up to 5.3% under higher power caps, while delivering power eiciency improvements of 27.7-8.4% at the respective power caps. Moreover, Fulcrum outperforms the two state-of-the-art approaches at both power caps, achieving geometric mean throughput improvements of 3.9-16.4% and power eiciency gains of 10.3-18.6%, while maintaining comparable fairness.
-    </p>
-  </i>
-</div>
-
-
-<p>[Full Paper]: <b>Sunil Kumar</b>, and Vivek Kumar, "<b>KarmaPM: Reward-Driven Power Manager</b>", in Proceedings of the European Conference on Parallel Processing (Euro-Par'25), Dresden, Germany, August 2025.
-  [<a href="javascript:void(0);" onclick="toggle('abstract-karma')">abstract</a>],
-  [<a href="https://doi.org/10.1007/978-3-031-99854-6_24" target="_blank">paper</a>]
-</p>
-<div id="abstract-karma" style="display:none;">
-  <i>
-    <p>
-      Hardware overprovisioning is a widely used technique to improve the average power utilization of computing systems by capping the processor’s power consumption. However, applying a uniform powercap across multiprocessor system sockets can significantly impact co-running applications due to workload variations. This paper introduces KarmaPM, a novel power management library for co-running applications on multiprocessor systems, independent of the parallel programming model, based on application power donation phases. KarmaPM dynamically redistributes power bidirectionally across the sockets to improve overall system throughput for co-running applications while maintaining fairness between them.
-    </p>
-    <p>
-      KarmaPM periodically profiles the CPU utilization of each socket. When it detects a socket underutilizing its CPU resources, it donates the surplus power from this donor socket to the other sockets (receivers) exhibiting high CPU utilization. When donor sockets enter a high CPU utilization phase, KarmaPM employs a reward power scheme that rewards the donor sockets by returning a portion of the transferred power. We evaluated KarmaPM across various exascale proxy application mixes and power caps on a four-socket, 72-core Intel Cooper Lake processor. Our results show that KarmaPM improved the system throughput (geometric mean) by 13.2% at a lower power cap and 6.6% at a higher power cap. Additionally, KarmaPM delivered improvements of 12.5% and 4.4% in system throughput (geomean) compared to an existing power manager at these respective power caps.
-    </p>
-  </i>
-</div>
-
-<p>[Full Paper]: <b>Sunil Kumar</b>, Akshat Gupta, Vivek Kumar, and Sridutt Bhalachandra, "<b>Cuttlefish: Library for Achieving Energy Efficiency in Multicore Parallel Programs</b>", in Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC'21), St. Louis, MO, USA, November 2021.
-  [<a href="javascript:void(0);" onclick="toggle('abstract-cuttlefish')">abstract</a>], 
-  [<a href="https://dl.acm.org/doi/10.1145/3458817.3476163" target="_blank">paper</a>]
-</p>
-<div id="abstract-cuttlefish" style="display:none;">
-  <i>
-    <p>
-      A low-cap power budget is challenging for exascale computing. Dynamic Voltage and Frequency Scaling (DVFS) and Uncore Frequency Scaling (UFS) are the two widely used techniques for limiting the HPC application’s energy footprint. However, existing approaches fail to provide a unified solution that can work with different types of parallel programming models and applications.
-    </p>
-    <p>
-      This paper proposes Cuttlefish, a programming model oblivious C/C++ library for achieving energy efficiency in multicore parallel programs running over Intel processors. An online profiler periodically profiles model-specific registers to discover a running application’s memory access pattern. Using a combination of DVFS and UFS, Cuttlefish then dynamically adapts the processor’s core and uncore frequencies, thereby improving its energy efficiency. The evaluation on a 20-core Intel Xeon processor using a set of widely used OpenMP benchmarks, consisting of several irregular-tasking and work-sharing pragmas, achieves geometric mean energy savings of 19.4% with a 3.6% slowdown.
-    </p>
-  </i>
-</div>
-<br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-<h1 class="heading">Doctorol Symposium and Poster Publications</h1>
-<p>[Short Paper]: <b>Sunil Kumar</b>, "<b>Power Scheduling on Multicore Multiprocessor Systems for Maximizing Throughput and Fairness</b>", in PhD Symposium, Euro-Par'25, Dresden, Germany, August 2025.
-  [<a href="javascript:void(0);" onclick="toggle('abstract-symposium')">abstract</a>]
-</p>
-<div id="abstract-symposium" style="display:none;">
-  <i>
-    <p>
-    Hardware overprovisioning is a widely used technique to improve the average power utilization of computing systems by capping the processor’s power consumption. However, applying uniform power caps across sockets in multiprocessor systems can degrade the performance of co-running applications due to workload variation. Existing solutions primarily aim to enhance power utilization and system throughput but ignore fairness in sharing surplus power between applications and rely on processor-selected frequency settings under a power cap, which may be suboptimal. This thesis addresses these limitations through a two-stage power management approach.
-    </p>
-    <p>
-      First, it proposes a system that dynamically and bidirectionally redistributes surplus power among applications to improve overall system throughput while ensuring fairness. When it identifies an application with surplus power, it donates power to other applications exhibiting high CPU utilization. When donor applications transition to the high CPU utilization phase, they are rewarded by having a portion of the transferred power returned to them. Second, it improves performance by configuring optimal frequency settings for each application under a power cap rather than relying on default processor settings. Once the performance is optimized, the system further reallocates power to balance performance gains across applications to improve the fairness between applications. The proposed system is evaluated on a quad-socket, 72-core Intel Xeon server using diverse HPC application mixes and power cap settings. The results demonstrate significant improvements in both system throughput and application-level fairness.
-    </p>
-  </i>
-</div>
-<p>[Poster]: <b>Sunil Kumar</b>, Vivek Kumar, and Sridutt Bhalachandra, "<b>RPM: Reward Power Manager for Power Distribution over a Cluster</b>", in Student Research Symposium, HiPC'24.
-  [<a href="https://doi.org/10.1109/HiPCW63042.2024.00034" target="_blank">paper</a>]
-</p>
-
-<p>[Poster]: <b>Sunil Kumar</b>, Vivek Kumar, and Sridutt Bhalachandra, "<b>Energy Efficiency under Limited Power Budget</b>", in Student Research Symposium, HiPC'22.
-  [<a href="https://doi.org/10.1109/HiPCW57629.2022.00015" target="_blank">paper</a>]
-</p>
-
-
-	</body>
+  </script>
+</body>
 </html>

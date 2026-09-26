@@ -1,43 +1,267 @@
-<body>
-
-.heading{
-	font-weight: bold;
-	font-size: 20;
-}
-.sub_text{
-	margin-right: 20px;
+* {
+  box-sizing: border-box;
 }
 
-img{
-	width: 400px;
-	float:left;
-	margin-left: 200px;
-	margin-right: 20px;
-	margin-top: 100px
-}
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333333;
+html {
+  scroll-behavior: smooth;
 }
 
-li {
-	float: right;
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #333333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
 }
 
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 16px;
-	text-decoration: none;
+a {
+  color: #1769aa;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
 }
 
-li a:hover {
-	background-color: #111111;
+a:hover {
+  color: #0b4f82;
+  border-bottom-color: currentColor;
 }
 
+.site {
+  width: min(920px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 38px 0 55px;
+}
 
-</body>
+.site-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.site-title {
+  color: #222;
+  border: 0;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.nav a {
+  color: #555;
+  font-size: 14px;
+  border: 0;
+}
+
+.nav a:hover {
+  color: #1769aa;
+}
+
+.intro {
+  max-width: 820px;
+  padding: 58px 0 20px;
+}
+
+.intro h1 {
+  margin: 0 0 3px;
+  color: #222;
+  font-size: clamp(34px, 5vw, 48px);
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+.role {
+  margin: 0;
+  color: #666;
+  font-size: 18px;
+}
+
+.affiliation {
+  margin-top: 4px;
+  color: #666;
+}
+
+.section {
+  max-width: 820px;
+  padding: 22px 0;
+}
+
+.section h2 {
+  margin: 0 0 13px;
+  color: #222;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.intro p,
+.section p {
+  margin: 0 0 16px;
+}
+
+.news p {
+  margin: 0 0 8px;
+}
+
+.news span {
+  display: inline-block;
+  width: 58px;
+  color: #888;
+  font-variant-numeric: tabular-nums;
+}
+
+.publication {
+  margin: 0 0 25px;
+}
+
+.publication p {
+  margin: 0 0 4px;
+}
+
+.pub-title {
+  color: #222;
+  font-weight: 600;
+}
+
+.site-footer {
+  margin-top: 35px;
+  padding-top: 25px;
+  border-top: 1px solid #e5e5e5;
+  color: #888;
+  font-size: 14px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 8px;
+}
+
+.page {
+  padding-top: 50px;
+}
+
+.page h1 {
+  margin: 0 0 28px;
+  color: #222;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.page h2 {
+  margin: 35px 0 12px;
+  color: #222;
+  font-size: 21px;
+}
+
+.page p {
+  max-width: 820px;
+}
+
+.paper {
+  margin: 0 0 34px;
+}
+
+.paper-title {
+  margin-bottom: 5px;
+  color: #222;
+  font-weight: 600;
+}
+
+.paper-meta {
+  color: #666;
+}
+
+.abstract {
+  display: none;
+  margin: 12px 0 0;
+  padding: 15px 18px;
+  border-left: 2px solid #ddd;
+  color: #555;
+  font-size: 15px;
+}
+
+.abstract p:last-child {
+  margin-bottom: 0;
+}
+
+.toggle {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #1769aa;
+  padding: 0;
+  color: #1769aa;
+  font: inherit;
+}
+
+.toggle:hover {
+  color: #0b4f82;
+}
+
+.profile-photo {
+  width: 145px;
+  height: 145px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 0 28px;
+}
+
+.cv-frame {
+  width: 100%;
+  height: 900px;
+  border: 1px solid #e5e5e5;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  margin-bottom: 12px;
+}
+
+.muted {
+  color: #777;
+}
+
+@media (max-width: 650px) {
+  .site {
+    width: min(100% - 28px, 920px);
+    padding-top: 22px;
+  }
+
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav {
+    gap: 15px;
+  }
+
+  .intro {
+    padding-top: 40px;
+  }
+
+  .news span {
+    width: 50px;
+  }
+
+  .cv-frame {
+    height: 650px;
+  }
+}
